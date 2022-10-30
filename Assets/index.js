@@ -36,3 +36,32 @@ function addSearchButton(city,container){
     searchButton.classList.add("previous","btn");
     container.appendChild(searchButton);
 }
+function searchResult(container1){
+    var currentStorage=JSON.parse(localStorage.getItem("recentSearch"));
+    for(var i=0;i<currentStorage.length;i++){
+        addSearchButton(currentStorage[i],container1);
+    }
+}
+function storeSearch(nameCity,resultContainer){
+    var tempArray = [];
+    if(localStorage1()){
+        var currentStorage=JSON.parse(localStorage.getItem("recentSearch"));
+        if(currentStorage.includes(nameCity)){
+            searchResult(resultContainer);
+            return;
+        }
+        for(var i=0;i<currentStorage.length;i++){
+            tempArray.push(currentStorage[i]);
+        }
+        tempArray.push(nameCity);
+        if(tempArray.length>5){
+            tempArray.shift();
+        }
+        localStorage.setItem("recentSearch",JSON.stringify(tempArray));
+        searchResult(resultContainer);
+        return;
+    }
+    tempArray.push(nameCity);
+    addSearchButton(tempArray[0],resultContainer);
+    localStorage.setItem("recentSearch",JSON.stringify(tempArray));
+}
