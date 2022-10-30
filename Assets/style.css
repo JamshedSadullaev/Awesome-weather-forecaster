@@ -1,0 +1,122 @@
+.jumbotron {
+    background-color: #007bff;
+    color: white;
+    padding: 2rem 2rem;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+main {
+    border-radius: 5px;
+}
+
+#top-container {
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#bottom-container {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#searchContainer {
+    padding-top: 10px;
+    color: #f17105;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchResultContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #f17105;
+}
+
+#previousResultsContainer {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#current-weather-wrapper {
+    width: 20%;
+}
+
+#weather-title {
+    text-align: center;
+    font-size: 36px;
+}
+
+.weather-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#forecast-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#forecast-wrapper p:first-child {
+    font-size: 36px;
+}
+
+#forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#weatherSection {
+    color: white;
+    background-color: #007bff;
+}
+
+img {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-color: #e6c229;
+    border-radius: 25px;
+}
+
+.card-title {
+    margin-top: 0.75rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.UV-Index {
+    border-radius: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+}
